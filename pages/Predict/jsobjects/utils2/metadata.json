@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils2",
+    "pageId": "Predict",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Predict_utils2",
+  "deleted": false,
+  "gitSyncId": "665d9fbe7fb8a648463c2254_80b20eda-1f42-43ab-a299-26c3730f5dc3"
+}

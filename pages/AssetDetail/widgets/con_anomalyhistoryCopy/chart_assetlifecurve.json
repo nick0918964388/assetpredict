@@ -1,0 +1,126 @@
+{
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "setAdaptiveYMin": false,
+    "allowScroll": false,
+    "iconSVG": "/static/media/icon.07abfb45c3867c2e1b1d5d4818b7078c.svg",
+    "topRow": 9,
+    "type": "CHART_WIDGET",
+    "chartData": {
+        "bbnqt4uwjb": {
+            "data": "[\n  {\n    \"x\": \"Jan\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Feb\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Mar\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Apr\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"May\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Jun\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"July\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Aug\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Sep\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Oct\",\n    \"y\": 19\n  },\n  {\n    \"x\": \"Nov\",\n    \"y\": 19\n  }\n]",
+            "color": "#d4d4d8",
+            "seriesName": "benchmark"
+        },
+        "9dn1v1wx4l": {
+            "data": "[\n  {\n    \"x\": \"Jan\",\n    \"y\": 15\n  },\n  {\n    \"x\": \"Feb\",\n    \"y\": 20\n  },\n  {\n    \"x\": \"Mar\",\n    \"y\": 15\n  },\n  {\n    \"x\": \"Apr\",\n    \"y\": 20\n  },\n  {\n    \"x\": \"May\",\n    \"y\": 15\n  },\n  {\n    \"x\": \"Jun\",\n    \"y\": 20\n  },\n  {\n    \"x\": \"July\",\n    \"y\": 21\n  },\n  {\n    \"x\": \"Aug\",\n    \"y\": 12\n  },\n  {\n    \"x\": \"Sep\",\n    \"y\": 15\n  },\n  {\n    \"x\": \"Oct\",\n    \"y\": 17\n  },\n  {\n    \"x\": \"Nov\",\n    \"y\": 15\n  }\n]",
+            "color": "#ef4444",
+            "seriesName": "value"
+        }
+    },
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "dynamicBindingPathList": [
+        {"key": "customEChartConfig"},
+        {"key": "borderRadius"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"}
+    ],
+    "leftColumn": 0,
+    "customEChartConfig": "{{ ((chartType) => ( \n{\n  xAxis: {\n    data: [0,02,04,06,08,10,12,14,16,18]\n  ,name:'Ages',show:true,nameLocation:'center'},\n  yAxis: {name:'Faullure probabilaty(%)',show:true,nameLocation:'end'},\n  series: [\n    {\n      data: [80,80,80,80,80,80,80,80,80,80],\n      type: 'line',\n      lineStyle: {\n        normal: {\n          color: 'green',\n          width: 1,\n          type: 'dashed'\n        }\n      }\n    },\n\t\t{\n      data: [60,60,60,60,60,60,60,60,60,60],\n      type: 'line',\n      lineStyle: {\n        normal: {\n          color: 'green',\n          width: 1,\n          type: 'dashed'\n        }\n      }\n    },\n\t\t{\n      data: [0,10,20,55,85,100,100,100,100,100],\n      type: 'line',\n      lineStyle: {\n        normal: {\n          color: 'black',\n          width: 1,\n\t\t\t\t\ttype: 'solid'\n        }\n      }\n    }\n  ]\n}\n))(chart_assetlifecurve.chartType) }}",
+    "flexVerticalAlignment": "start",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "onCanvasUI": {
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "disableParentSelection": false,
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    },
+    "isVisible": true,
+    "version": 1,
+    "tags": ["Display"],
+    "isLoading": false,
+    "chartName": "",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "Month",
+    "originalBottomRow": 40,
+    "needsErrorInfo": true,
+    "mobileBottomRow": 37,
+    "widgetName": "chart_assetlifecurve",
+    "dynamicPropertyPathList": [],
+    "displayName": "Chart",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "bottomRow": 37,
+    "parentRowSpace": 10,
+    "hideCard": false,
+    "mobileRightColumn": 24,
+    "parentColumnSpace": 13.6181640625,
+    "dynamicTriggerPathList": [],
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "showDataPointLabel": false,
+    "key": "2adgc7d4lu",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "thumbnailSVG": "/static/media/thumbnail.98fb19b2c4f99671c0888284cf939f3a.svg",
+    "widgetId": "5ycgbjxf3i",
+    "minWidth": 450,
+    "parentId": "xwexu9ih9v",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "mobileTopRow": 5,
+    "responsiveBehavior": "fill",
+    "yAxisName": "Failure probability(%)",
+    "originalTopRow": 8,
+    "mobileLeftColumn": 0,
+    "chartType": "CUSTOM_ECHART"
+}

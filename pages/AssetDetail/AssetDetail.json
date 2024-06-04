@@ -1,0 +1,101 @@
+{
+  "unpublishedPage": {
+    "name": "AssetDetail",
+    "slug": "assetdetail",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2500,
+          "containerStyle": "none",
+          "snapRows": 95,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 970,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "AssetDetail_utils1.getFactorsFailure",
+              "name": "utils1.getFactorsFailure",
+              "collectionId": "AssetDetail_utils1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const getFactorsFailures = await getFactorsFailure.run();\n  let filteredgetFactorsFailures = getFactorsFailures;\n  return filteredgetFactorsFailures.map(p => ({\n    Leadfactors: p.leadfactors,\n    Importance: p.importance,\n    Importancescore: p.importancescore\n  }));\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AssetDetail_utils1.getHealthbreakdown",
+              "name": "utils1.getHealthbreakdown",
+              "collectionId": "AssetDetail_utils1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const healthbreakdowns = await getHealthBreakdown.run();\n  let filteredHealthbreakdowns = healthbreakdowns;\n  return filteredHealthbreakdowns.map(p => ({\n    Assetnum: p.assetnum,\n    Score: p.score,\n    Contributor: p.contributor,\n    Weight: p.weight\n  }));\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AssetDetail_utils1.getSelTimeRange",
+              "name": "utils1.getSelTimeRange",
+              "collectionId": "AssetDetail_utils1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const getSelTimeRanges = await getSelTimeRange.run();\n  let filteredgetSelTimeRanges = getSelTimeRanges;\n  return filteredgetSelTimeRanges.map(p => ({\n    Timerange: p.timerange,\n    Description: p.description,\n    Unit: p.unit\n  }));\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "AssetDetail_getAssetByAssetnum",
+              "name": "getAssetByAssetnum",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.key"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "AssetDetail_getAssetDetailByAssetnum",
+              "name": "getAssetDetailByAssetnum",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.key"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "AssetDetail",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e39414576df82f0e7ee54f_63f7010b07d3496c6b0bc7a7"
+}

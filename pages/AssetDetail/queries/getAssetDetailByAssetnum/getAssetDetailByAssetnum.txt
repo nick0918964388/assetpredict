@@ -1,0 +1,2 @@
+SELECT * FROM public."maxapm_asset" 
+where assetnum='{{appsmith.URL.queryParams.key}}'

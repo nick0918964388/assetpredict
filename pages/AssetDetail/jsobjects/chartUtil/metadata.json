@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "chartUtil",
+    "pageId": "AssetDetail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "option",
+        "value": "{\n  tooltip: {\n    formatter: '{a} <br/>{b} : {c}%'\n  },\n  series: [{\n    name: 'Health',\n    type: 'gauge',\n    progress: {\n      show: true\n    },\n    color: ['#dd6b66', '#759aa0', '#e69d87', '#8dc1a9', '#ea7e53', '#eedd78', '#73a373', '#73b9bc', '#7289ab', '#91ca8c', '#f49f42'],\n    detail: {\n      valueAnimation: true,\n      formatter: '{value}'\n    },\n    axisLabel: {\n      show: false\n    },\n    title: {\n      fontsize: 5\n    },\n    data: [{\n      value: getAssetByAssetnum.data[0].healthscore\n    }]\n  }]\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "AssetDetail_chartUtil",
+  "deleted": false,
+  "gitSyncId": "665d9fbe7fb8a648463c2254_e8d74a94-dbf3-4317-b8b5-a1237a20df6e"
+}

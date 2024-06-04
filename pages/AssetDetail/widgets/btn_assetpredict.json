@@ -1,0 +1,53 @@
+{
+    "needsErrorInfo": false,
+    "boxShadow": "none",
+    "mobileBottomRow": 88,
+    "widgetName": "btn_assetpredict",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "displayName": "Icon button",
+    "iconSVG": "/static/media/icon.bb5d55ae67fb1687dff78e66ad1faec0.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 84,
+    "bottomRow": 88,
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 63,
+    "animateLoading": true,
+    "parentColumnSpace": 19.8125,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 59,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"}
+    ],
+    "isDisabled": false,
+    "key": "mpup8pri93",
+    "isDeprecated": false,
+    "rightColumn": 62,
+    "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
+    "iconName": "chevron-down",
+    "widgetId": "46msn385fp",
+    "onCanvasUI": {
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "disableParentSelection": false,
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    },
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 84,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 59,
+    "buttonVariant": "TERTIARY"
+}

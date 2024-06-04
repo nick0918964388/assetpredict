@@ -1,0 +1,2 @@
+SELECT * FROM public."mxapm_lowhealth" 
+where assetnum='{{appsmith.URL.queryParams.key}}'
