@@ -3,7 +3,7 @@
     "setAdaptiveYMin": false,
     "allowScroll": false,
     "iconSVG": "/static/media/icon.07abfb45c3867c2e1b1d5d4818b7078c.svg",
-    "topRow": 9,
+    "topRow": 11,
     "type": "CHART_WIDGET",
     "chartData": {
         "bbnqt4uwjb": {
@@ -54,7 +54,7 @@
         "visuals",
         "visualisations"
     ],
-    "bottomRow": 37,
+    "bottomRow": 39,
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 24,

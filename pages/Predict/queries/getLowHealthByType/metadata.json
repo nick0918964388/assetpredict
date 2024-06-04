@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "getLowHealth",
+    "name": "getLowHealthByType",
     "datasource": {
       "name": "mxapm",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM public.\"mxapm_lowhealth\"",
+      "body": "SELECT * FROM public.\"mxapm_lowhealth\"  where type = {{sel_productStockFilter.value}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,18 +27,24 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "sel_productStockFilter.value"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-03T11:04:24Z"
+    "createdAt": "2024-06-04T15:29:51Z"
   },
-  "id": "Predict_getLowHealth",
+  "id": "Predict_getLowHealthByType",
   "deleted": false,
-  "gitSyncId": "665d9fbe7fb8a648463c2254_6f5e55e9-5aaa-4b00-abb0-095012a58be5"
+  "gitSyncId": "665f30a47fb8a648463c2347_251f8117-a99d-4a44-b107-21d6caefc91c"
 }

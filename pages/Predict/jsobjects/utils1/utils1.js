@@ -1,6 +1,7 @@
 export default {
   getLowHealth: async () => {
-    const assetLowHealths = await getLowHealth.run();
+		
+    const assetLowHealths = sel_productStockFilter.value ? await getLowHealthByType.run() : await getLowHealth.run();
     let filteredLowHealths = assetLowHealths;
 
     return filteredLowHealths.map(p => ({
