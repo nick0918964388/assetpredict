@@ -16,14 +16,17 @@
     "dynamicTriggerPathList": [],
     "imageShape": "RECTANGLE",
     "leftColumn": 3,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "defaultImage": "https://3.imimg.com/data3/AF/DY/MY-8896813/gas-compressor-500x500.jpg",
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "image"}
+    ],
+    "defaultImage": "",
     "flexVerticalAlignment": "start",
     "key": "5eiytgn8cv",
-    "image": "",
+    "image": "{{getAssetDetailByAssetnum.data[0].images}}",
     "isDeprecated": false,
     "rightColumn": 61,
-    "objectFit": "cover",
+    "objectFit": "contain",
     "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
     "widgetId": "dlz1i7ob38",
     "onCanvasUI": {

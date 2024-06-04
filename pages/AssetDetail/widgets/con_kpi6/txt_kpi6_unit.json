@@ -4,13 +4,13 @@
     "widgetName": "txt_kpi6_unit",
     "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
     "displayName": "Text",
-    "topRow": 8,
+    "topRow": 9,
     "searchTags": [
         "typography",
         "paragraph",
         "label"
     ],
-    "bottomRow": 15,
+    "bottomRow": 16,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,

@@ -1,0 +1,1 @@
+SELECT type FROM public."mxapm_lowhealth" group by type

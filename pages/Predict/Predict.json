@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 800,
+          "bottomRow": 970,
           "containerStyle": "none",
           "snapRows": 95,
           "parentRowSpace": 1,
@@ -28,13 +28,23 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Predict_getLowHealthTypeList",
+              "name": "getLowHealthTypeList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Predict_utils1.getLowHealth",
               "name": "utils1.getLowHealth",
               "collectionId": "Predict_utils1",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const assetLowHealths = await getLowHealth.run();\n  let filteredLowHealths = assetLowHealths;\n  return filteredLowHealths.map(p => ({\n    Assetnum: p.assetnum,\n    Type: p.type,\n    Site: p.siteid,\n    HealthScore: p.healthScore,\n    Predictedfailuredate: p.predictedfailuredate,\n    Installdate: p.installdate,\n    Age: p.age,\n    TotalCost: p.totalcost\n  }));\n}"
+                "async () => {\n  const assetLowHealths = sel_productStockFilter.value ? await getLowHealthByType.run() : await getLowHealth.run();\n  let filteredLowHealths = assetLowHealths;\n  return filteredLowHealths.map(p => ({\n    Assetnum: p.assetnum,\n    Type: p.type,\n    Site: p.siteid,\n    HealthScore: p.healthScore,\n    Predictedfailuredate: p.predictedfailuredate,\n    Installdate: p.installdate,\n    Age: p.age,\n    TotalCost: p.totalcost\n  }));\n}"
               ],
               "timeoutInMillisecond": 10000
             }
