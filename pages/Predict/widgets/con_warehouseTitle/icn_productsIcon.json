@@ -17,7 +17,10 @@
     "parentColumnSpace": 4.234375,
     "dynamicTriggerPathList": [],
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"}
+    ],
     "isDisabled": false,
     "key": "65zsj43qir",
     "isDeprecated": false,
@@ -29,6 +32,6 @@
     "parentId": "khfwdoqepk",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "borderRadius": "1.5rem",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "buttonVariant": "PRIMARY"
 }

@@ -19,7 +19,10 @@
         {"key": "menuItems.menuItem3s5cf1ys7e.onClick"}
     ],
     "leftColumn": 60,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "menuColor"}
+    ],
     "isDisabled": false,
     "key": "xhh0ol5f83",
     "sourceDataKeys": [],
@@ -82,7 +85,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "menuColor": "#fafafa",
+    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
     "menuItemsSource": "STATIC",
     "iconAlign": "left",
     "placement": "CENTER"

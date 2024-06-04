@@ -15,14 +15,15 @@
     "shouldScrollContents": true,
     "animateLoading": true,
     "overflow": "NONE",
-    "fontFamily": "System Default",
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 17.9375,
     "dynamicTriggerPathList": [],
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "borderRadius"},
-        {"key": "textColor"}
+        {"key": "textColor"},
+        {"key": "fontFamily"}
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
